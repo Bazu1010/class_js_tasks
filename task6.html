@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Question 6
+            //Write a program input a password
+
+       let password = "admin@123";
+       
+       let attempts = 0;  
+      
+
+       for(i=0; i< 4; i++){
+        let input = prompt("Enter Password")
+        if(input==password){console.log("access granted") 
+        break;
+    } else{
+        if(attempts == 4){
+        console.log("Account blocked")
+    }
+        
+        console.log("Wrong password " + (4-attempts[i])  + " attempts remaining")
+    }
+    
+       }
+    </script>
+    
+</body>
+</html>
