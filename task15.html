@@ -11,7 +11,7 @@
         // adds them to find the gross salary then uses  the gross salary to find the NHIF. 
         let basic_salary= parseFloat(prompt("Enter Basic_salary"))
         let benefits = parseFloat(prompt("Enter Benefits"))
-
+function nhif (){
         gross_salary = basic_salary + benefits;
 
         if (gross_salary < 5999) {
@@ -50,7 +50,8 @@
             nhif_contribution = 1700
         } else {
             console.log("Invalid")
-        }
+        } return nhif;
+    } let NHIF = nhif()
 
 
         console.log("Gross salary:" + gross_salary);

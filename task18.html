@@ -16,7 +16,7 @@
         let benefits = parseFloat(prompt("Enter Benefits"))
 
         gross_salary = basic_salary + benefits;
-
+function nhif(){
         if (gross_salary < 5999) {
             nhif_contribution = 150
         } else if (gross_salary > 6000 && gross_salary < 7999) {
@@ -53,7 +53,8 @@
             nhif_contribution = 1700
         } else {
             console.log("Invalid")
-        }
+        } return nhif;
+    }
 
         function nssf() {
             //NSSF

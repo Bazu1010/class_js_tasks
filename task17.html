@@ -15,7 +15,7 @@ let basic_salary= parseFloat(prompt("Enter Basic_salary"))
         let benefits = parseFloat(prompt("Enter Benefits"))
 
         gross_salary = basic_salary + benefits;
-
+function nhif(){
         if (gross_salary < 5999) {
             nhif_contribution = 150
         } else if (gross_salary > 6000 && gross_salary < 7999) {
@@ -53,6 +53,15 @@ let basic_salary= parseFloat(prompt("Enter Basic_salary"))
         } else {
             console.log("Invalid")
         }
+        return nhif;
+    }
+    let NHIF = nhif()
+
+
+        console.log("Gross salary:" + gross_salary);
+
+        console.log("NHIF: " + nhif_contribution);
+
 
 function nhdf(){
      let nhdfR= 0.015
