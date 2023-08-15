@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //Write a program that takes the date of birth of a person and the program outputs the age in terms of years,months,days TODAY.
+
+
+        let today= new Date();
+        let dobirth = new Date("2000,11,01");
+        let dateofbirth = dobirth
+        //dateofbirth = prompt("yy,mm,dd")
+
+
+        let years=today.getFullYear() - dobirth.getFullYear();
+        let month=(today.getMonth() - dobirth.getMonth());
+        let days= (dobirth.getDay() - today.getDay());
+
+
+        if(month<0){
+            months = month +12;
+        }else{}
+
+       
+
+        
+        
+
+        console.log(`Years ${years}, months ${months}, days ${days}`);
+         
+
+
+
+    </script>
+</body>
+</html>
